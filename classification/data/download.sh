@@ -47,3 +47,12 @@ mkdir webvision2018_test/meta
 
 awk '$0=$0" 0"' test_filelist.txt > webvision2018_test/meta/val.txt
 cp meta/synsets.txt webvision2018_test/meta/
+
+wget https://data.vision.ee.ethz.ch/cvl/webvision2018/google.tar
+tar -xvf google.tar
+rm google.tar
+
+wget https://data.vision.ee.ethz.ch/cvl/webvision2018/flickr.tar
+tar -xvf flickr.tar
+rm flickr.tar
+
