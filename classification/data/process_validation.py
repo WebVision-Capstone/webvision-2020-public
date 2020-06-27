@@ -7,6 +7,8 @@ from shutil import copyfile
 synset_to_index = dict()
 index_to_synsets = dict()
 
+primary_path = './'
+
 # read in the synset map
 with open(primary_path + 'info/synsets.txt', 'r') as f:
     for i, line in enumerate(f):
